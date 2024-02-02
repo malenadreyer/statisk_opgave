@@ -1,0 +1,120 @@
+img {
+  width: 100%;
+}
+html {
+  background-color: #7bcdfa;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Comfortaa";
+}
+p {
+  font-family: "Lekton";
+}
+@media screen and (min-width: 800px) {
+  .produktgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 60px;
+  }
+  .beskrivesegrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .grid1 {
+    display: grid;
+    line-height: 0.1px;
+    padding-left: 30px;
+  }
+  .brandname {
+    font-size: 1.5rem;
+  }
+  .beskrivelse {
+    display: grid;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  .price {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+  }
+  .soldout {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding-left: 30px;
+    font-family: "Comfortaa";
+  }
+  #button1 {
+    display: inline-block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    font-family: "Lato";
+    letter-spacing: 3px;
+    background-color: #36b4f8;
+    transition: background-color 0.6s ease;
+  }
+  #button1:hover {
+    background-color: #c5e7fedf;
+    color: white;
+  }
+}
+@media screen and (max-width: 800px) {
+  .produktgrid {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+  }
+  .beskrivesegrid {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .grid1 {
+    display: grid;
+    line-height: 0.1px;
+    padding-left: 10px;
+    margin: 20px;
+  }
+  .brandname {
+    font-size: 1.5rem;
+  }
+  .beskrivelse {
+    display: grid;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .price {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+  }
+  .soldout {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 50px;
+    width: 50%;
+    font-family: "Comfortaa";
+  }
+  #button1 {
+    display: inline-block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    font-family: "Lato";
+    letter-spacing: 3px;
+    background-color: #36b4f8;
+    transition: background-color 0.6s ease;
+  }
+  #button1:hover {
+    background-color: #c5e7fedf;
+    color: white;
+  }
+}

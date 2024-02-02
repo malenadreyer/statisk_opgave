@@ -1,0 +1,139 @@
+img {
+  width: 100%;
+}
+html {
+  background-color: #7bcdfa;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Comfortaa";
+}
+p {
+  font-family: "Lekton";
+}
+@media screen and (min-width: 800px) {
+  .brands {
+    display: grid;
+    padding-left: 20px;
+    font-size: 1.5rem;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+  }
+  .product a {
+    text-decoration: none;
+    color: black;
+  }
+  .product1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .product-soldout {
+    display: grid;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+  }
+  .product-soldout:hover img {
+    display: flex;
+    filter: grayscale(40%) brightness(1.2);
+  }
+  .product:hover img {
+    filter: grayscale(40%) brightness(1.2);
+    display: flex;
+  }
+  .product-soldout a {
+    text-decoration: none;
+    color: black;
+  }
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sold-out-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10.1px;
+    width: 90%;
+    height: 23%;
+    background: rgba(171, 169, 169, 0.305);
+    display: flex;
+  }
+
+  .sold-out-text {
+    color: rgb(94, 92, 92);
+    font-family: "lekton", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .brands {
+    display: grid;
+    padding-left: 20px;
+    font-size: 1.5rem;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .product a {
+    text-decoration: none;
+    color: black;
+  }
+  .product1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-soldout {
+    display: grid;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+  }
+  .product-soldout:hover img {
+    display: flex;
+    filter: grayscale(40%) brightness(1.2);
+  }
+  .product:hover img {
+    filter: grayscale(40%) brightness(1.2);
+    display: flex;
+  }
+  .product-soldout a {
+    text-decoration: none;
+    color: black;
+  }
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sold-out-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10.1px;
+    width: 91%;
+    height: 68%;
+    background: rgba(171, 169, 169, 0.305);
+    display: flex;
+  }
+
+  .sold-out-text {
+    color: rgb(94, 92, 92);
+    font-family: "lekton", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+  }
+}

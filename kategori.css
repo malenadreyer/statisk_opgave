@@ -1,0 +1,40 @@
+img {
+  width: 100%;
+}
+html {
+  background-color: #7bcdfa;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Comfortaa";
+}
+p {
+  font-family: "Lekton";
+}
+a {
+  display: flex;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Lato";
+  letter-spacing: 3px;
+  background-color: #7bcdfa;
+  transition: background-color 0.6s ease;
+  padding-left: 20px;
+  border-bottom: 1px solid black;
+}
+a:hover {
+  background-color: #c5e7fedf;
+  color: white;
+}
+.list {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: 1fr;
+}
+.brandnames {
+  display: grid;
+  grid-template-columns: 1fr;
+}
