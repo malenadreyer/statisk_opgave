@@ -1,8 +1,9 @@
 img {
   width: 100%;
+  display: block;
 }
 html {
-  background-color: #7bcdfa;
+  background-color: #f5f3ec;
 }
 h1,
 h2,
@@ -11,7 +12,7 @@ h4 {
   font-family: "Comfortaa";
 }
 p {
-  font-family: "Lekton";
+  font-family: "Nunito Sans";
 }
 @media screen and (min-width: 800px) {
   .brands {
@@ -19,12 +20,16 @@ p {
     padding-left: 20px;
     font-size: 1.5rem;
   }
-  .product {
+  .main {
     display: grid;
     grid-template-columns: 1fr;
 
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    color: black;
+  }
+  .product {
+    padding: 20px;
   }
   .product a {
     text-decoration: none;
@@ -35,105 +40,102 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .product-soldout {
-    display: grid;
-    display: inline-block;
     position: relative;
-    padding: 10px;
   }
-  .product-soldout:hover img {
-    display: flex;
-    filter: grayscale(40%) brightness(1.2);
+  .product-soldout img {
+    position: relative;
+    filter: grayscale(100%);
   }
+
+  .product-soldout:after {
+    content: "Sold Out";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-152%, -465%);
+    background-color: rgba(0, 0, 0, 0.657); /* Justér farven efter behov */
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    display: block;
+    font-family: "lekton";
+  }
+
   .product:hover img {
     filter: grayscale(40%) brightness(1.2);
     display: flex;
-  }
-  .product-soldout a {
-    text-decoration: none;
-    color: black;
   }
   .product-image {
     max-width: 100%;
     height: auto;
     display: block;
   }
-
-  .sold-out-overlay {
+  .discount {
     position: absolute;
-    top: 10px;
-    left: 10.1px;
-    width: 90%;
-    height: 23%;
-    background: rgba(171, 169, 169, 0.305);
-    display: flex;
-  }
-
-  .sold-out-text {
-    color: rgb(94, 92, 92);
-    font-family: "lekton", sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding-left: 10px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .brands {
-    display: grid;
-    padding-left: 20px;
-    font-size: 1.5rem;
-  }
-  .product {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-  .product a {
-    text-decoration: none;
-    color: black;
-  }
-  .product1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .product-soldout {
-    display: grid;
-    display: inline-block;
-    position: relative;
-    padding: 10px;
-  }
-  .product-soldout:hover img {
-    display: flex;
-    filter: grayscale(40%) brightness(1.2);
-  }
-  .product:hover img {
-    filter: grayscale(40%) brightness(1.2);
-    display: flex;
-  }
-  .product-soldout a {
-    text-decoration: none;
-    color: black;
-  }
-  .product-image {
-    max-width: 100%;
-    height: auto;
+    transform: translate(380%, -290%);
+    background-color: rgba(229, 52, 52, 0.657); /* Justér farven efter behov */
+    color: white;
+    padding: 5px 15px;
+    font-size: 1rem;
     display: block;
+    font-family: "nuntino sans";
+  }
+  .nypris {
+    font-weight: bold;
+    grid-template-columns: 3fr 5fr;
+    display: grid;
+    cursor: pointer;
+  }
+  .nypris span {
+    font-weight: bold;
+    color: red;
+  }
+  .nypris p:last-child {
+    font-weight: bold;
+    color: red;
   }
 
-  .sold-out-overlay {
-    position: absolute;
-    top: 10px;
-    left: 10.1px;
-    width: 91%;
-    height: 68%;
-    background: rgba(171, 169, 169, 0.305);
-    display: flex;
-  }
+  @media screen and (max-width: 800px) {
+    .brands {
+      display: grid;
+      padding-left: 20px;
+      font-size: 1.5rem;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+    .product a {
+      text-decoration: none;
+      color: black;
+    }
+    .product1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .product-soldout {
+      display: grid;
+      display: inline-block;
+      position: relative;
+      padding: 10px;
+    }
+    .product-soldout:hover img {
+      display: flex;
+      filter: grayscale(40%) brightness(1.2);
+    }
+    .product:hover img {
+      filter: grayscale(40%) brightness(1.2);
+      display: flex;
+    }
+    .product-soldout a {
+      text-decoration: none;
+      color: black;
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
 
-  .sold-out-text {
-    color: rgb(94, 92, 92);
-    font-family: "lekton", sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding-left: 10px;
   }
 }

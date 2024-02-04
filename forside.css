@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: white;
+  background-color: #f5f3ec;
   font-family: "Kosugi Maru";
   letter-spacing: 6px;
   margin-right: 40px;
@@ -92,7 +92,7 @@ nav .current a {
 
 nav.active .menu {
   display: block;
-  background-color: white;
+  background-color: #f5f3ec;
   position: relative;
   top: 0px;
   left: 0;
