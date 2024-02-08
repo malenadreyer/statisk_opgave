@@ -68,21 +68,21 @@ p {
     text-align: center;
     align-items: center;
     padding-left: 30px;
-    font-family: "Comfortaa";
+    font-family: "nunito sans";
   }
   .button1 {
     display: inline-block;
-    padding: 10px 0px;
+    padding: 10px 200px;
     text-decoration: none;
     color: black;
     border-radius: 30px;
     font-family: "Lato";
     letter-spacing: 3px;
-    background-color: #36b4f8;
+    background-color: #fbe9a0;
     transition: background-color 0.6s ease;
   }
   .button1:hover {
-    background-color: #c5e7fedf;
+    background-color: #f3e8be;
     color: white;
   }
   .udsolgt {
@@ -91,7 +91,7 @@ p {
     text-decoration: none;
     color: black;
     border-radius: 30px;
-    font-family: "Lato";
+    font-family: "nunito sans";
     letter-spacing: 3px;
     background-color: #9a9a9a;
   }
@@ -131,7 +131,7 @@ p {
     padding-left: 10px;
     padding-top: 50px;
     width: 50%;
-    font-family: "Comfortaa";
+    font-family: "nunito sans";
   }
   #button1 {
     display: inline-block;
@@ -139,7 +139,7 @@ p {
     text-decoration: none;
     color: black;
     border-radius: 30px;
-    font-family: "Lato";
+    font-family: "nunito sans";
     letter-spacing: 3px;
     background-color: #36b4f8;
     transition: background-color 0.6s ease;

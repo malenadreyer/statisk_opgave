@@ -30,20 +30,7 @@ function showProduct(product) {
   if (product.soldout) {
     copy.querySelector("article").classList.add("product-soldout");
   }
+  copy.querySelector(".readmore").setAttribute("href", `produkt.html?id=${product.id}`);
+
   document.querySelector(".product1").appendChild(copy);
 }
-/*
-  id	1164
-gender	"Men"
-category	"Apparel"
-subcategory	"Topwear"
-articletype	"Tshirts"
-season	"Winter"
-productionyear	2015
-usagetype	"Sports"
-productdisplayname	"Blue T20 Indian Cricket Jersey"
-price	1595
-discount	28
-brandname	"Nike"
-soldout	1
-*/

@@ -1,4 +1,7 @@
-fetch("https://kea-alt-del.dk/t7/api/products/1525")
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+fetch("https://kea-alt-del.dk/t7/api/products/" + id)
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
@@ -19,13 +22,13 @@ function showProduct(product) {
   document.querySelector(".price h2 span").textContent = newPrice.toFixed(2);
 
   const soldoutSpan = document.querySelector(".soldout span");
-  if (product.soldout === 0) {
+  if (product.soldout == 0) {
+    soldoutSpan.textContent = "Køb nu";
+    soldoutSpan.classList.remove("udsolgt");
+    soldoutSpan.classList.add("button1");
+  } else {
     soldoutSpan.textContent = "Udsolgt";
     soldoutSpan.classList.add("udsolgt");
-    soldoutSpan.classList.remove(".button1");
-  } else {
-    soldoutSpan.textContent = "Køb Nu";
-    soldoutSpan.classList.remove("udsolgt"); //
-    soldoutSpan.classList.add(".button1");
+    soldoutSpan.classList.remove("button1");
   }
 }
