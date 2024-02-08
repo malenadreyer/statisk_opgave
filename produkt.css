@@ -1,17 +1,17 @@
 img {
-  width: 100%;
+  width: 70%;
 }
 html {
-  background-color: #7bcdfa;
+  background-color: #f5f3ec;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Comfortaa";
+  font-family: "Nunito Sans";
 }
 p {
-  font-family: "Lekton";
+  font-family: "Nunito Sans";
 }
 @media screen and (min-width: 800px) {
   .produktgrid {
@@ -22,15 +22,19 @@ p {
   }
   .beskrivesegrid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .grid1 {
     display: grid;
+    grid-template-rows: 1fr 5fr 3fr;
     line-height: 0.1px;
     padding-left: 30px;
   }
   .brandname {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .articletype {
+    font-size: 1.7rem;
   }
   .beskrivelse {
     display: grid;
@@ -39,8 +43,25 @@ p {
   }
   .price {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     align-items: center;
+  }
+  .price h2 {
+    color: red;
+  }
+  .price2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+  .price h4 {
+    position: absolute;
+    transform: translate(0%, -290%);
+    background-color: rgba(229, 52, 52, 0.657); /* Justér farven efter behov */
+    color: white;
+    padding: 30px 20px;
+    font-size: 1rem;
+    display: block;
   }
   .soldout {
     display: grid;
@@ -49,7 +70,7 @@ p {
     padding-left: 30px;
     font-family: "Comfortaa";
   }
-  #button1 {
+  .button1 {
     display: inline-block;
     padding: 10px 0px;
     text-decoration: none;
@@ -60,9 +81,19 @@ p {
     background-color: #36b4f8;
     transition: background-color 0.6s ease;
   }
-  #button1:hover {
+  .button1:hover {
     background-color: #c5e7fedf;
     color: white;
+  }
+  .udsolgt {
+    display: inline-block;
+    padding: 10px 200px;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    font-family: "Lato";
+    letter-spacing: 3px;
+    background-color: #9a9a9a;
   }
 }
 @media screen and (max-width: 800px) {

@@ -2,16 +2,17 @@ img {
   width: 100%;
 }
 html {
-  background-color: #7bcdfa;
+  background-color: #f5f3ec;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Comfortaa";
+  font-family: "nunito sans";
 }
 p {
-  font-family: "Lekton";
+  font-family: "nunito sans";
+  color: black;
 }
 a {
   display: flex;
@@ -20,14 +21,13 @@ a {
   color: black;
   font-family: "Lato";
   letter-spacing: 3px;
-  background-color: #7bcdfa;
-  transition: background-color 0.6s ease;
+  background-color: #f5f3ec;
+  transition: background-color 0.3s ease;
   padding-left: 20px;
   border-bottom: 1px solid black;
 }
 a:hover {
-  background-color: #c5e7fedf;
-  color: white;
+  background-color: #f3e8be;
 }
 .list {
   display: grid;

@@ -14,35 +14,54 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,700;1,6..12,500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="forside.css">
     <title>Produkt</title>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="kategori.html">Brands</a></li>
+                <li><a href="produkt.html">Produkter</a></li>
+                <li><a href="produktliste.html">Produktliste</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <script src="menu.js">  </script>
+    </header>
     <main>
-        <article class="produktgrid">
-            <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1165.webp" alt="#"></div>
+        <section class="produktgrid">
+            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1165.webp" alt="">
             <div class="beskrivesegrid">
                 <div class="grid1">
                     <div class="brandname">
                         <h1>Nike</h1>
                     </div>
                     <div class="articletype">
-                        <h2>T-shirts</h2>
+                        <h2>beskrivelse</h2>
+                        <p>productnavn</p>
                     </div>
                     <div class="price">
-                        <h3>Price</h3>
-                        <h4>Discount</h4>
+                        <h2>Ny pris: <span>Nypris</span> DKK</h2>
+                        <div class="price2">
+                            <h3> Oprindeligt: <span>Price</span> DKK</h3>
+                            <h4>-<span>Discount</span>%</h4>
+                        </div>
+
                     </div>
                 </div>
-                <div class="beskrivelse">
-                    <p>Mean Team India Cricket Jersey</p>
-                </div>
                 <div class="soldout">
-                    <a href="#" target="_blank" id="button1">Køb nu</a>
+                    <a href="#" target="_blank" id="button1"><span>Køb nu</span></a>
                 </div>
             </div>
-        </article>
+        </section>
+        <script src="produkt.js"></script>
     </main>
     <footer></footer>
 </body>

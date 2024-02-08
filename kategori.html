@@ -14,48 +14,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,700;1,6..12,500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="forside.css">
     <title>Designers</title>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="kategori.html">Brands</a></li>
+                <li><a href="produkt.html">Produkter</a></li>
+                <li><a href="produktliste.html">Produktliste</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <script src="menu.js">  </script>
+    </header>
     <main>
-        <template>
-            <article class="list">
-                <div class="brand">
-                    <h1>Brands</h1>
-                </div>
-                <div class="letters">
-                    <h2>A</h2>
-                </div>
-                <div class="brandnames">
-                    <a href="produktliste.html">
-                        <p>Adidas</p>
-                    </a>
-                    <a href="produktliste.html">
-                        <p>Allibaba</p>
-                    </a>
-                    <a href="produktliste.html">
-                        <p>American Aperal</p>
-                    </a>
-                </div>
 
-                <div class="letters">
-                    <h2>B</h2>
-                </div>
-                <div>
-                    <a href="produktliste.html">
-                        <p>Billi B</p>
-                    </a>
-                    <a href="produktliste.html">
-                        <p>Bibiboobo</p>
-                    </a>
-                    <a href="produktliste.html">
-                        <p>Bentely</p>
-                    </a>
-                </div>
-            </article>
-        </template>
+        <article class="list">
+            <h2>A</h2>
+            <template id="productTemplate">
+                <a href="produktliste.html">
+                    <p>Adidas</p>
+                </a>
+
+            </template>
+        </article>
+        <script src="kategori.js"></script>
     </main>
     <footer></footer>
 </body>

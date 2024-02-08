@@ -78,7 +78,7 @@ p {
     padding: 5px 15px;
     font-size: 1rem;
     display: block;
-    font-family: "nuntino sans";
+    font-family: "nuntio sans";
   }
   .nypris {
     font-weight: bold;
@@ -136,6 +136,6 @@ p {
       max-width: 100%;
       height: auto;
       display: block;
-
+    }
   }
 }
