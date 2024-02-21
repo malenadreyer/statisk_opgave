@@ -101,10 +101,16 @@ p {
       padding-left: 20px;
       font-size: 1.5rem;
     }
-    .product {
+    .main {
       display: grid;
       grid-template-columns: 1fr;
-      padding: 10px;
+
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      padding: 20px;
+      color: black;
+    }
+    .product {
+      padding: 20px;
     }
     .product a {
       text-decoration: none;
@@ -112,30 +118,62 @@ p {
     }
     .product1 {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .product-soldout {
-      display: grid;
-      display: inline-block;
       position: relative;
-      padding: 10px;
     }
-    .product-soldout:hover img {
-      display: flex;
-      filter: grayscale(40%) brightness(1.2);
+    .product-soldout img {
+      position: relative;
+      filter: grayscale(100%);
     }
+
+    .product-soldout:after {
+      content: "Sold Out";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-152%, -465%);
+      background-color: rgba(0, 0, 0, 0.657); /* Justér farven efter behov */
+      color: white;
+      padding: 20px;
+      font-size: 1rem;
+      display: block;
+      font-family: "lekton";
+    }
+
     .product:hover img {
       filter: grayscale(40%) brightness(1.2);
       display: flex;
-    }
-    .product-soldout a {
-      text-decoration: none;
-      color: black;
     }
     .product-image {
       max-width: 100%;
       height: auto;
       display: block;
+    }
+    .discount {
+      position: absolute;
+      transform: translate(380%, -290%);
+      background-color: rgba(229, 52, 52, 0.657); /* Justér farven efter behov */
+      color: white;
+      padding: 5px 15px;
+      font-size: 1rem;
+      display: block;
+      font-family: "nuntio sans";
+    }
+    .nypris {
+      font-weight: bold;
+      grid-template-columns: 3fr 5fr;
+      display: grid;
+      cursor: pointer;
+    }
+    .nypris span {
+      font-weight: bold;
+      color: red;
+    }
+    .nypris p:last-child {
+      font-weight: bold;
+      color: red;
     }
   }
 }

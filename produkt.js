@@ -21,6 +21,14 @@ function showProduct(product) {
   const newPrice = originalPrice * (1 - discount / 100);
   document.querySelector(".price h2 span").textContent = newPrice.toFixed(2);
 
+  if (product.discount === null) {
+    document.querySelector(".price h2").style.display = "none";
+    document.querySelector(".price h4").style.display = "none";
+  } else {
+    document.querySelector(".price h2").style.display = "block";
+    document.querySelector(".price h4").style.display = "block";
+  }
+
   const soldoutSpan = document.querySelector(".soldout span");
   if (product.soldout == 0) {
     soldoutSpan.textContent = "Køb nu";

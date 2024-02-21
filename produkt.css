@@ -34,7 +34,10 @@ p {
     font-size: 1rem;
   }
   .articletype {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .beskrivelse {
     display: grid;
@@ -94,6 +97,9 @@ p {
     font-family: "nunito sans";
     letter-spacing: 3px;
     background-color: #9a9a9a;
+  }
+  .ingendiscount h2 {
+    display: none;
   }
 }
 @media screen and (max-width: 800px) {
